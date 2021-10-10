@@ -38,15 +38,4 @@ namespace unnamedcmd
             }
         }
     }
-    
-    class commands
-    {
-        public static void cmdhelp()
-        {
-            Console.WriteLine("help - your number 1 helper");
-            Console.WriteLine("---------------------------");
-            Console.WriteLine("exit - Exits UnnamedCMD");
-            Console.WriteLine("help - shows this msg");
-        }
-    }
 }
