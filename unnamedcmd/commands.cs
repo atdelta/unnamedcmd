@@ -35,5 +35,9 @@ namespace unnamedcmd
         {
             Console.Clear();
         }
+        public static void open(string appname)
+        {
+            Process.Start(appname);
+        }
     }
 }

@@ -46,6 +46,12 @@ namespace unnamedcmd
             {
                 Environment.Exit(0);
             }
+            if (Answer == "open")
+            {
+                Console.WriteLine("Write your apps name with path (if standartcmd command - without path)");
+                string appnamew = Console.ReadLine();
+                commands.open(appnamew);
+            }
             else
             {
                 Console.WriteLine("This command doesn't exists!");
