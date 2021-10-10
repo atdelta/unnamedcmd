@@ -28,6 +28,23 @@ namespace unnamedcmd
                 Console.WriteLine("");
                 Program.cmd();
             }
+            if (Answer == "clear")
+            {
+                commands.clear();
+                Program.cmd();
+            }
+            if (Answer == "github")
+            {
+                commands.github();
+                Console.WriteLine("");
+                Program.cmd();
+            }
+            if (Answer == "helloworld")
+            {
+                commands.helloworld();
+                Console.WriteLine("");
+                Program.cmd();
+            }
             if (Answer == "exit")
             {
                 Environment.Exit(0);
