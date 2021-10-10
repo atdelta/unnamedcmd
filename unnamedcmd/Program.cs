@@ -13,23 +13,40 @@ namespace unnamedcmd
         {
             Console.WriteLine("Giving power to all systems!");
             Thread.Sleep(5000);
-            Console.WriteLine("Write that you want (help - for help):");
+            Program.cmd();
+        }
+
+        private static void cmd()
+        {
+            Console.WriteLine("Insert command (help - for help):");
             string Answer = Console.ReadLine();
-            if (Answer == help)
+            if (Answer == "help")
             {
+                commands.cmdhelp();
+                Console.WriteLine("");
+                Program.cmd();
             }
-            if (Answer == exit)
+            if (Answer == "exit")
             {
+                Environment.Exit(0);
             }
             else
+            {
+                Console.WriteLine("This command doesn't exists!");
+                Console.WriteLine("");
+                Program.cmd();
+            }
         }
     }
     
-    class help
+    class commands
     {
-        Console.WriteLine("help - your number 1 helper");
-        Console.WriteLine("---------------------------");
-        Console.WriteLine("exit - Exits UnnamedCMD");
-        Console.WriteLine("help - shows this msg");
+        public static void cmdhelp()
+        {
+            Console.WriteLine("help - your number 1 helper");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("exit - Exits UnnamedCMD");
+            Console.WriteLine("help - shows this msg");
+        }
     }
 }
