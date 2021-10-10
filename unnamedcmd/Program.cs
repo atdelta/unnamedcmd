@@ -1,3 +1,4 @@
+// Wrote in VS2022 Prev4 and GitHub.
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,13 @@ namespace unnamedcmd
             Thread.Sleep(5000);
             Console.WriteLine("Write that you want (help - for help):");
             string Answer = Console.ReadLine();
+            if (Answer == help)
+            {
+            }
+            if (Answer == exit)
+            {
+            }
+            else
         }
     }
     
