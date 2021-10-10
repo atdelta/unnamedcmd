@@ -6,4 +6,5 @@ Right now - (almost) nothing, but it will be filled with commands and stuff.
 ## What are your plans?
 You can check them out in Projects>UnnamedCMD
 ## Badges:
-(i'l do it on pc)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/litecave/unnamedcmd)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/litecave/unnamedcmd)
