@@ -11,13 +11,16 @@ namespace unnamedcmd
     {
         static void Main(string[] args)
         {
+            string copyright = "(c) crosspl. & litecave. All rights reserved.";
             Console.WriteLine("Giving power to all systems!");
             Thread.Sleep(5000);
+            Console.WriteLine(copyright);
             Program.cmd();
         }
 
         private static void cmd()
         {
+            string copyright = "(c) crosspl. & litecave. All rights reserved.";
             Console.WriteLine("Insert command (help - for help):");
             #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
             string Answer = Console.ReadLine();
@@ -30,6 +33,7 @@ namespace unnamedcmd
             if (Answer == "clear")
             {
                 commands.clear();
+                Console.WriteLine(copyright);
                 Program.cmd();
             }
             if (Answer == "github")
