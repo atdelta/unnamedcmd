@@ -13,6 +13,7 @@ namespace unnamedcmd
             Console.WriteLine("Giving power to all systems!");
             Thread.Sleep(5000);
             Console.WriteLine("Write that you want (help - for help):");
+            string Answer = Console.ReadLine();
         }
     }
 }
