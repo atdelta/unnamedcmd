@@ -53,18 +53,35 @@ namespace unnamedcmd
             if (Answer == "open")
             {
                 Console.WriteLine("Write your apps name with path (if standartcmd command - without path)");
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string appnamew = Console.ReadLine();
-                commands.open(appnamew);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+                if (appnamew != null)
+                {
+                    Console.WriteLine("Null isn't program!");
+                }
+                else
+                {
+#pragma warning disable CS8604 // Possible null reference argument.
+                    commands.open(appnamew);
+#pragma warning restore CS8604 // Possible null reference argument.
+                }
             }
             if (Answer == "theme light")
             {
                 Console.BackgroundColor = ConsoleColor.White;
                 Console.ForegroundColor = ConsoleColor.Black;
+                commands.clear();
+                Console.WriteLine(copyright);
+                Program.cmd();
             }
             if (Answer == "theme black")
             {
                 Console.BackgroundColor = ConsoleColor.Black;
                 Console.ForegroundColor = ConsoleColor.White;
+                commands.clear();
+                Console.WriteLine(copyright);
+                Program.cmd();
             }
             else
             {

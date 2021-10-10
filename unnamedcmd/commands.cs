@@ -19,6 +19,8 @@ namespace unnamedcmd
             Console.WriteLine("exit - Exits UnnamedCMD");
             Console.WriteLine("help - shows this msg");
             Console.WriteLine("clear - clear console");
+            Console.WriteLine("theme light/black - applying console theme");
+            Console.WriteLine("custom themes coming into v0.1.0-v1.0.0");
             Console.WriteLine("");
         }
         public static void github()
@@ -38,6 +40,10 @@ namespace unnamedcmd
         public static void open(string appname)
         {
             Process.Start(appname);
+        }
+        public static void notepad()
+        {
+            Process.Start("notepad.exe");
         }
     }
 }
