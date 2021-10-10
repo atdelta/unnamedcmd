@@ -11,6 +11,7 @@ namespace unnamedcmd
     {
         static void Main(string[] args)
         {
+            Console.Title = "UnnamedCMD by crosspl. & litecave.";
             string copyright = "(c) crosspl. & litecave. All rights reserved.";
             Console.WriteLine("Giving power to all systems!");
             Thread.Sleep(5000);
