@@ -56,6 +56,16 @@ namespace unnamedcmd
                 string appnamew = Console.ReadLine();
                 commands.open(appnamew);
             }
+            if (Answer == "theme light")
+            {
+                Console.BackgroundColor = ConsoleColor.White;
+                Console.ForegroundColor = ConsoleColor.Black;
+            }
+            if (Answer == "theme black")
+            {
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
+            }
             else
             {
                 Console.WriteLine("This command doesn't exists!");
