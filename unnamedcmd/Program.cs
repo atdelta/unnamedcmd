@@ -25,7 +25,6 @@ namespace unnamedcmd
             if (Answer == "help")
             {
                 commands.cmdhelp();
-                
                 Program.cmd();
             }
             if (Answer == "clear")
@@ -36,13 +35,11 @@ namespace unnamedcmd
             if (Answer == "github")
             {
                 commands.github();
-                
                 Program.cmd();
             }
             if (Answer == "helloworld")
             {
                 commands.helloworld();
-                
                 Program.cmd();
             }
             if (Answer == "exit")
@@ -52,7 +49,6 @@ namespace unnamedcmd
             else
             {
                 Console.WriteLine("This command doesn't exists!");
-               
                 Program.cmd();
             }
         }
