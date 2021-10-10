@@ -19,14 +19,17 @@ namespace unnamedcmd
             Console.WriteLine("exit - Exits UnnamedCMD");
             Console.WriteLine("help - shows this msg");
             Console.WriteLine("clear - clear console");
+            Console.WriteLine("");
         }
         public static void github()
         {
             Process.Start("explorer.exe", "https://github.com/litecave/unnamedcmd");
+            Console.WriteLine("");
         }
         public static void helloworld()
         {
             Console.WriteLine("Hello, World!");
+            Console.WriteLine("");
         }
         public static void clear()
         {
