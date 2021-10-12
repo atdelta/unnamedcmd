@@ -42,10 +42,13 @@ namespace unnamedcmd
                 commands.github();
                 Program.cmd();
             }
-            if (Answer == "helloworld")
+            if (Answer == "url")
             {
-                commands.helloworld();
-                Program.cmd();
+                Console.WriteLine("Write URL to your site");
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
+                string urlw = Console.ReadLine();
+                commands.url(urlw);
+#pragma warning restore CS8604 // Possible null reference argument.
             }
             if (Answer == "exit")
             {
@@ -56,17 +59,8 @@ namespace unnamedcmd
                 Console.WriteLine("Write your apps name with path (if standartcmd command - without path)");
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string appnamew = Console.ReadLine();
-#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
-                if (appnamew != null)
-                {
-                    Console.WriteLine("Null isn't program!");
-                }
-                else
-                {
-#pragma warning disable CS8604 // Possible null reference argument.
                     commands.open(appnamew);
 #pragma warning restore CS8604 // Possible null reference argument.
-                }
             }
             if (Answer == "theme light")
             {

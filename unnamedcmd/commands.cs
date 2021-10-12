@@ -15,7 +15,7 @@ namespace unnamedcmd
             Console.WriteLine("help - your number 1 helper");
             Console.WriteLine("---------------------------");
             Console.WriteLine("github - Open's UnnamedCMD GitHub");
-            Console.WriteLine("helloworld - Showing: Hello, World!");
+            Console.WriteLine("url - Open web url.");
             Console.WriteLine("exit - Exits UnnamedCMD");
             Console.WriteLine("help - shows this msg");
             Console.WriteLine("clear - clear console");
@@ -28,10 +28,9 @@ namespace unnamedcmd
             Process.Start("explorer.exe", "https://github.com/litecave/unnamedcmd");
             Console.WriteLine("");
         }
-        public static void helloworld()
+        public static void url(string bruhurl)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("");
+            Process.Start("explorer.exe", bruhurl);
         }
         public static void clear()
         {
