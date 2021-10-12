@@ -44,10 +44,10 @@ namespace unnamedcmd
             }
             if (Answer == "url")
             {
-                Console.WriteLine("Write URL to your site");
+                Console.WriteLine("Write URL to your site without https://");
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string urlw = Console.ReadLine();
-                commands.url(urlw);
+                commands.url("https://" + urlw);
 #pragma warning restore CS8604 // Possible null reference argument.
             }
             if (Answer == "exit")

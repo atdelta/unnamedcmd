@@ -25,7 +25,7 @@ namespace unnamedcmd
         }
         public static void github()
         {
-            Process.Start("explorer.exe", "https://github.com/litecave/unnamedcmd");
+            Process.Start("explorer.exe", "https://github.com/studiocrosspl/unnamedcmd");
             Console.WriteLine("");
         }
         public static void url(string bruhurl)
